@@ -1,10 +1,7 @@
 package com.myweb.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.myweb.domain.CeLue;
-import com.myweb.domain.JiHua;
-import com.myweb.domain.XiaoShou;
-import com.myweb.domain.XiuZheng;
+import com.myweb.domain.*;
 import com.myweb.service.OneService;
 import com.utils.Result;
 import org.apache.logging.log4j.LogManager;
@@ -37,7 +34,7 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, xiuZheng);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("excel", "xiuZheng", str.toString());
+            kafkaTemplate.send("csv", "xiuZheng", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,7 +49,7 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, ceLue);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("excel", "ceLue", str.toString());
+            kafkaTemplate.send("csv", "ceLue", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -67,7 +64,7 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, xiaoShou);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("excel", "xiaoShou", str.toString());
+            kafkaTemplate.send("csv", "xiaoShou", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -82,12 +79,25 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, jiHua);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("excel", "jiHua", str.toString());
+            kafkaTemplate.send("csv", "jiHua", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
         result.setMessage(str.toString());
         return result;
     }
-
+    @Override
+    public Result sendMessage(ZengXian zengXian) {
+        Result result = new Result();
+        StringWriter str = new StringWriter();
+        try {
+            objectMapper.writeValue(str, zengXian);
+            logger.info("kafka的消息={}", str.toString());
+            kafkaTemplate.send("api", "zengXian", str.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        result.setMessage(str.toString());
+        return result;
+    }
 }

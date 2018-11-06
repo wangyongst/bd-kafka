@@ -1,10 +1,7 @@
 package com.myweb.service;
 
 
-import com.myweb.domain.CeLue;
-import com.myweb.domain.JiHua;
-import com.myweb.domain.XiaoShou;
-import com.myweb.domain.XiuZheng;
+import com.myweb.domain.*;
 import com.utils.Result;
 
 public interface OneService {
@@ -17,4 +14,5 @@ public interface OneService {
 
     public Result sendMessage(XiaoShou xiaoShou);
 
+    public Result sendMessage(ZengXian zengXian);
 }

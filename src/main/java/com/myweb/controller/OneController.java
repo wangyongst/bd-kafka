@@ -1,6 +1,7 @@
 package com.myweb.controller;
 
 import com.myweb.domain.XiuZheng;
+import com.myweb.domain.ZengXian;
 import com.myweb.service.OneService;
 import com.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,5 +23,11 @@ public class OneController {
         xiuZheng.setXingming("中国");
         xiuZheng.setShoujihaoma("1811131");
         return oneService.sendMessage(xiuZheng);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/send/zengxian", method = RequestMethod.POST)
+    public Result send(@RequestBody ZengXian zengXian) {
+        return oneService.sendMessage(zengXian);
     }
 }
