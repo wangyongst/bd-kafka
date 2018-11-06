@@ -1,6 +1,9 @@
 package com.myweb.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.myweb.domain.CeLue;
+import com.myweb.domain.JiHua;
+import com.myweb.domain.XiaoShou;
 import com.myweb.domain.XiuZheng;
 import com.myweb.service.OneService;
 import com.utils.Result;
@@ -34,8 +37,52 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, xiuZheng);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("test", "key", str.toString());
-            logger.info("发送kafka成功.");
+            kafkaTemplate.send("xiuZheng", "xiuZheng", str.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        result.setMessage(str.toString());
+        return result;
+    }
+
+    @Override
+    public Result sendMessage(CeLue ceLue) {
+        Result result = new Result();
+        StringWriter str = new StringWriter();
+        try {
+            objectMapper.writeValue(str, ceLue);
+            logger.info("kafka的消息={}", str.toString());
+            kafkaTemplate.send("ceLue", "ceLue", str.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        result.setMessage(str.toString());
+        return result;
+    }
+
+    @Override
+    public Result sendMessage(XiaoShou xiaoShou) {
+        Result result = new Result();
+        StringWriter str = new StringWriter();
+        try {
+            objectMapper.writeValue(str, xiaoShou);
+            logger.info("kafka的消息={}", str.toString());
+            kafkaTemplate.send("xiaoShou", "xiaoShou", str.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        result.setMessage(str.toString());
+        return result;
+    }
+
+    @Override
+    public Result sendMessage(JiHua jiHua) {
+        Result result = new Result();
+        StringWriter str = new StringWriter();
+        try {
+            objectMapper.writeValue(str, jiHua);
+            logger.info("kafka的消息={}", str.toString());
+            kafkaTemplate.send("jiHua", "jiHua", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }

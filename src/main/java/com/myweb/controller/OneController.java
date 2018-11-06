@@ -18,9 +18,9 @@ public class OneController {
     @RequestMapping(value = "/send/xiuzheng", method = RequestMethod.POST)
     public Result send() {
         XiuZheng xiuZheng = new XiuZheng();
-        xiuZheng.setLine("1");
-        xiuZheng.setName("中国");
-        xiuZheng.setMobile("1811131");
+        xiuZheng.setHanghao("1");
+        xiuZheng.setXingming("中国");
+        xiuZheng.setShoujihaoma("1811131");
         return oneService.sendMessage(xiuZheng);
     }
 }
