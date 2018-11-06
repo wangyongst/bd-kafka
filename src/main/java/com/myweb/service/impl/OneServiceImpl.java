@@ -37,7 +37,7 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, xiuZheng);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("xiuZheng", "xiuZheng", str.toString());
+            kafkaTemplate.send("excel", "xiuZheng", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,7 +52,7 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, ceLue);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("ceLue", "ceLue", str.toString());
+            kafkaTemplate.send("excel", "ceLue", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -67,7 +67,7 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, xiaoShou);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("xiaoShou", "xiaoShou", str.toString());
+            kafkaTemplate.send("excel", "xiaoShou", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -82,7 +82,7 @@ public class OneServiceImpl implements OneService {
         try {
             objectMapper.writeValue(str, jiHua);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("jiHua", "jiHua", str.toString());
+            kafkaTemplate.send("excel", "jiHua", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
