@@ -4,133 +4,132 @@ import java.io.Serializable;
 
 public class XiaoShou implements Serializable {
 
-    private String line;
-    private String jigou;
-    private String sheng;
-    private String shi;
-    private String type;
-    private String content;
-    private String name;
-    private String mobile;
-    private String sex;
-    private String birthday;
-    private String age;
-    private String source;
-    private String moshi;
-    private String fugai;
+    private String hanghao;
+    private String shujuguishujigou;
+    private String shujuguishusheng;
+    private String shujuguishushi;
+    private String mingdanleixing;
+    private String mingdanxiangshu;
+    private String shoujihaoma;
+    private String xingming;
+    private String xingbie;
+    private String shengri;
+    private String nianling;
+    private String shujulaiyuan;
+    private String yewumoshi;
+    private String fugaileixing;
     private String beizhu;
 
-
-    public String getLine() {
-        return line;
+    public String getHanghao() {
+        return hanghao;
     }
 
-    public void setLine(String line) {
-        this.line = line;
+    public void setHanghao(String hanghao) {
+        this.hanghao = hanghao;
     }
 
-    public String getJigou() {
-        return jigou;
+    public String getShujuguishujigou() {
+        return shujuguishujigou;
     }
 
-    public void setJigou(String jigou) {
-        this.jigou = jigou;
+    public void setShujuguishujigou(String shujuguishujigou) {
+        this.shujuguishujigou = shujuguishujigou;
     }
 
-    public String getSheng() {
-        return sheng;
+    public String getShujuguishusheng() {
+        return shujuguishusheng;
     }
 
-    public void setSheng(String sheng) {
-        this.sheng = sheng;
+    public void setShujuguishusheng(String shujuguishusheng) {
+        this.shujuguishusheng = shujuguishusheng;
     }
 
-    public String getShi() {
-        return shi;
+    public String getShujuguishushi() {
+        return shujuguishushi;
     }
 
-    public void setShi(String shi) {
-        this.shi = shi;
+    public void setShujuguishushi(String shujuguishushi) {
+        this.shujuguishushi = shujuguishushi;
     }
 
-    public String getType() {
-        return type;
+    public String getMingdanleixing() {
+        return mingdanleixing;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setMingdanleixing(String mingdanleixing) {
+        this.mingdanleixing = mingdanleixing;
     }
 
-    public String getContent() {
-        return content;
+    public String getMingdanxiangshu() {
+        return mingdanxiangshu;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setMingdanxiangshu(String mingdanxiangshu) {
+        this.mingdanxiangshu = mingdanxiangshu;
     }
 
-    public String getName() {
-        return name;
+    public String getShoujihaoma() {
+        return shoujihaoma;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setShoujihaoma(String shoujihaoma) {
+        this.shoujihaoma = shoujihaoma;
     }
 
-    public String getMobile() {
-        return mobile;
+    public String getXingming() {
+        return xingming;
     }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
+    public void setXingming(String xingming) {
+        this.xingming = xingming;
     }
 
-    public String getSex() {
-        return sex;
+    public String getXingbie() {
+        return xingbie;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setXingbie(String xingbie) {
+        this.xingbie = xingbie;
     }
 
-    public String getBirthday() {
-        return birthday;
+    public String getShengri() {
+        return shengri;
     }
 
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
+    public void setShengri(String shengri) {
+        this.shengri = shengri;
     }
 
-    public String getAge() {
-        return age;
+    public String getNianling() {
+        return nianling;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setNianling(String nianling) {
+        this.nianling = nianling;
     }
 
-    public String getSource() {
-        return source;
+    public String getShujulaiyuan() {
+        return shujulaiyuan;
     }
 
-    public void setSource(String source) {
-        this.source = source;
+    public void setShujulaiyuan(String shujulaiyuan) {
+        this.shujulaiyuan = shujulaiyuan;
     }
 
-    public String getMoshi() {
-        return moshi;
+    public String getYewumoshi() {
+        return yewumoshi;
     }
 
-    public void setMoshi(String moshi) {
-        this.moshi = moshi;
+    public void setYewumoshi(String yewumoshi) {
+        this.yewumoshi = yewumoshi;
     }
 
-    public String getFugai() {
-        return fugai;
+    public String getFugaileixing() {
+        return fugaileixing;
     }
 
-    public void setFugai(String fugai) {
-        this.fugai = fugai;
+    public void setFugaileixing(String fugaileixing) {
+        this.fugaileixing = fugaileixing;
     }
 
     public String getBeizhu() {

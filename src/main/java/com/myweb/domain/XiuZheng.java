@@ -4,31 +4,31 @@ import java.io.Serializable;
 
 public class XiuZheng implements Serializable {
 
-    private String name;
-    private String mobile;
-    private String line;
+    private String xingming;
+    private String shoujihaoma;
+    private String hanghao;
 
-    public String getName() {
-        return name;
+    public String getXingming() {
+        return xingming;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setXingming(String xingming) {
+        this.xingming = xingming;
     }
 
-    public String getMobile() {
-        return mobile;
+    public String getShoujihaoma() {
+        return shoujihaoma;
     }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
+    public void setShoujihaoma(String shoujihaoma) {
+        this.shoujihaoma = shoujihaoma;
     }
 
-    public String getLine() {
-        return line;
+    public String getHanghao() {
+        return hanghao;
     }
 
-    public void setLine(String line) {
-        this.line = line;
+    public void setHanghao(String hanghao) {
+        this.hanghao = hanghao;
     }
 }

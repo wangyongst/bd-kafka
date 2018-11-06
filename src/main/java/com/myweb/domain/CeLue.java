@@ -4,118 +4,127 @@ import java.io.Serializable;
 
 public class CeLue implements Serializable {
 
-    private String line;
-    private String name;
-    private String shi;
-    private String bumen;
-    private String sheng;
-    private String jigou;
-    private String yue;
-    private String liang;
-    private String mindan;
-    private String xiangshu;
-    private String shujusheng;
-    private String shujushi;
+    private String hanghao;
+    private String xiafaceluemingcheng;
+    private String xiafashi;
+    private String xiafabumen;
+    private String xiafasheng;
+    private String xiafajigou;
+    private String guishujigou;
+    private String huodongyue;
+    private String xiafaliang;
+    private String mingdanleixing;
+    private String mingdanxiangshu;
+    private String shujuguishusheng;
+    private String shujuguishushi;
     private String dingshiqi;
-    private String youxiaoqi;
+    private String youxiaoqijiezhi;
     private String youxianji;
-    private String qishi;
-    private String jileiliang;
+    private String youxiaoqiqishi;
+    private String xiafajileiliang;
 
-    public String getLine() {
-        return line;
+    public String getHanghao() {
+        return hanghao;
     }
 
-    public void setLine(String line) {
-        this.line = line;
+    public void setHanghao(String hanghao) {
+        this.hanghao = hanghao;
     }
 
-    public String getName() {
-        return name;
+    public String getXiafaceluemingcheng() {
+        return xiafaceluemingcheng;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setXiafaceluemingcheng(String xiafaceluemingcheng) {
+        this.xiafaceluemingcheng = xiafaceluemingcheng;
     }
 
-    public String getShi() {
-        return shi;
+    public String getXiafashi() {
+        return xiafashi;
     }
 
-    public void setShi(String shi) {
-        this.shi = shi;
+    public void setXiafashi(String xiafashi) {
+        this.xiafashi = xiafashi;
     }
 
-    public String getBumen() {
-        return bumen;
+    public String getXiafabumen() {
+        return xiafabumen;
     }
 
-    public void setBumen(String bumen) {
-        this.bumen = bumen;
+    public void setXiafabumen(String xiafabumen) {
+        this.xiafabumen = xiafabumen;
     }
 
-    public String getSheng() {
-        return sheng;
+    public String getXiafasheng() {
+        return xiafasheng;
     }
 
-    public void setSheng(String sheng) {
-        this.sheng = sheng;
+    public void setXiafasheng(String xiafasheng) {
+        this.xiafasheng = xiafasheng;
     }
 
-    public String getJigou() {
-        return jigou;
+    public String getXiafajigou() {
+        return xiafajigou;
     }
 
-    public void setJigou(String jigou) {
-        this.jigou = jigou;
+    public void setXiafajigou(String xiafajigou) {
+        this.xiafajigou = xiafajigou;
     }
 
-    public String getYue() {
-        return yue;
+    public String getGuishujigou() {
+        return guishujigou;
     }
 
-    public void setYue(String yue) {
-        this.yue = yue;
+    public void setGuishujigou(String guishujigou) {
+        this.guishujigou = guishujigou;
     }
 
-    public String getLiang() {
-        return liang;
+    public String getHuodongyue() {
+        return huodongyue;
     }
 
-    public void setLiang(String liang) {
-        this.liang = liang;
+    public void setHuodongyue(String huodongyue) {
+        this.huodongyue = huodongyue;
     }
 
-    public String getMindan() {
-        return mindan;
+    public String getXiafaliang() {
+        return xiafaliang;
     }
 
-    public void setMindan(String mindan) {
-        this.mindan = mindan;
+    public void setXiafaliang(String xiafaliang) {
+        this.xiafaliang = xiafaliang;
     }
 
-    public String getXiangshu() {
-        return xiangshu;
+    public String getMingdanleixing() {
+        return mingdanleixing;
     }
 
-    public void setXiangshu(String xiangshu) {
-        this.xiangshu = xiangshu;
+    public void setMingdanleixing(String mingdanleixing) {
+        this.mingdanleixing = mingdanleixing;
     }
 
-    public String getShujusheng() {
-        return shujusheng;
+    public String getMingdanxiangshu() {
+        return mingdanxiangshu;
     }
 
-    public void setShujusheng(String shujusheng) {
-        this.shujusheng = shujusheng;
+    public void setMingdanxiangshu(String mingdanxiangshu) {
+        this.mingdanxiangshu = mingdanxiangshu;
     }
 
-    public String getShujushi() {
-        return shujushi;
+    public String getShujuguishusheng() {
+        return shujuguishusheng;
     }
 
-    public void setShujushi(String shujushi) {
-        this.shujushi = shujushi;
+    public void setShujuguishusheng(String shujuguishusheng) {
+        this.shujuguishusheng = shujuguishusheng;
+    }
+
+    public String getShujuguishushi() {
+        return shujuguishushi;
+    }
+
+    public void setShujuguishushi(String shujuguishushi) {
+        this.shujuguishushi = shujuguishushi;
     }
 
     public String getDingshiqi() {
@@ -126,12 +135,12 @@ public class CeLue implements Serializable {
         this.dingshiqi = dingshiqi;
     }
 
-    public String getYouxiaoqi() {
-        return youxiaoqi;
+    public String getYouxiaoqijiezhi() {
+        return youxiaoqijiezhi;
     }
 
-    public void setYouxiaoqi(String youxiaoqi) {
-        this.youxiaoqi = youxiaoqi;
+    public void setYouxiaoqijiezhi(String youxiaoqijiezhi) {
+        this.youxiaoqijiezhi = youxiaoqijiezhi;
     }
 
     public String getYouxianji() {
@@ -142,19 +151,19 @@ public class CeLue implements Serializable {
         this.youxianji = youxianji;
     }
 
-    public String getQishi() {
-        return qishi;
+    public String getYouxiaoqiqishi() {
+        return youxiaoqiqishi;
     }
 
-    public void setQishi(String qishi) {
-        this.qishi = qishi;
+    public void setYouxiaoqiqishi(String youxiaoqiqishi) {
+        this.youxiaoqiqishi = youxiaoqiqishi;
     }
 
-    public String getJileiliang() {
-        return jileiliang;
+    public String getXiafajileiliang() {
+        return xiafajileiliang;
     }
 
-    public void setJileiliang(String jileiliang) {
-        this.jileiliang = jileiliang;
+    public void setXiafajileiliang(String xiafajileiliang) {
+        this.xiafajileiliang = xiafajileiliang;
     }
 }
