@@ -3,7 +3,7 @@ package com.myweb.domain;
 import java.io.Serializable;
 
 public class CeLue implements Serializable {
-
+    private String id;
     private String hanghao;
     private String xiafaceluemingcheng;
     private String xiafashi;
@@ -22,6 +22,14 @@ public class CeLue implements Serializable {
     private String youxianji;
     private String youxiaoqiqishi;
     private String xiafajileiliang;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getHanghao() {
         return hanghao;

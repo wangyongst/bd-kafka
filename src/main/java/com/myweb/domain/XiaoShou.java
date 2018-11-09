@@ -3,7 +3,7 @@ package com.myweb.domain;
 import java.io.Serializable;
 
 public class XiaoShou implements Serializable {
-
+    private String id;
     private String hanghao;
     private String shujuguishujigou;
     private String shujuguishusheng;
@@ -22,6 +22,14 @@ public class XiaoShou implements Serializable {
 
     public String getHanghao() {
         return hanghao;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setHanghao(String hanghao) {

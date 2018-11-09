@@ -91,9 +91,10 @@ public class OneServiceImpl implements OneService {
         Result result = new Result();
         StringWriter str = new StringWriter();
         try {
+            zengXian.setId(String.valueOf(System.currentTimeMillis()));
             objectMapper.writeValue(str, zengXian);
             logger.info("kafka的消息={}", str.toString());
-            kafkaTemplate.send("api", "zengXian", str.toString());
+            kafkaTemplate.send("zengxian", "zengxian", str.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }

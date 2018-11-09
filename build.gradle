@@ -58,6 +58,10 @@ dependencies {
 
     compile('org.springframework.kafka:spring-kafka')
 
+    compile('org.apache.kudu:kudu-client')
+
+    compile('org.apache.spark:spark-streaming-kafka_2.10:1.6.3')
+
     compile('com.fasterxml.jackson.core:jackson-databind')
 
 }

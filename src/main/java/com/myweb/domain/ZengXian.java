@@ -2,6 +2,7 @@ package com.myweb.domain;
 
 public class ZengXian {
 
+    private String id;
     private String transno;
     private String serviceid;
     private String partners;
@@ -51,6 +52,14 @@ public class ZengXian {
     private String str28;
     private String str29;
     private String str30;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getTransno() {
         return transno;
