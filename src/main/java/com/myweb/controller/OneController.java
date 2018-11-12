@@ -1,6 +1,5 @@
 package com.myweb.controller;
 
-import com.myweb.domain.XiuZheng;
 import com.myweb.domain.ZengXian;
 import com.myweb.service.OneService;
 import com.utils.Result;
@@ -16,18 +15,32 @@ public class OneController {
     public OneService oneService;
 
     @ResponseBody
-    @RequestMapping(value = "/send/xiuzheng", method = RequestMethod.POST)
-    public Result send() {
-        XiuZheng xiuZheng = new XiuZheng();
-        xiuZheng.setHanghao("1");
-        xiuZheng.setXingming("中国");
-        xiuZheng.setShoujihaoma("1811131");
-        return oneService.sendMessage(xiuZheng);
+    @RequestMapping(value = "/send/zengxian", method = RequestMethod.POST)
+    public Result sendZengxian(@RequestBody ZengXian zengXian) {
+        return oneService.sendZengXian(zengXian);
     }
 
     @ResponseBody
-    @RequestMapping(value = "/send/zengxian", method = RequestMethod.POST)
-    public Result send(@RequestBody ZengXian zengXian) {
-        return oneService.sendMessage(zengXian);
+    @RequestMapping(value = "/send/celue", method = RequestMethod.POST)
+    public Result sendCeLue() {
+        return oneService.sendCeLue();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/send/jihua", method = RequestMethod.POST)
+    public Result sendJiHua() {
+        return oneService.sendJiHua();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/send/xiuzheng", method = RequestMethod.POST)
+    public Result sendXiuZheng() {
+        return oneService.sendXiuZheng();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/send/xiaoshou", method = RequestMethod.POST)
+    public Result sendXiaoShou() {
+        return oneService.sendXiaoShou();
     }
 }

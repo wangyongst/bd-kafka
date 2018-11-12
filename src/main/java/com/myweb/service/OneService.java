@@ -6,13 +6,13 @@ import com.utils.Result;
 
 public interface OneService {
 
-    public Result sendMessage(XiuZheng xiuZheng);
+    public Result sendZengXian(ZengXian zengXian);
 
-    public Result sendMessage(CeLue ceLue);
+    public Result sendCeLue();
 
-    public Result sendMessage(JiHua jiHua);
+    public Result sendJiHua();
 
-    public Result sendMessage(XiaoShou xiaoShou);
+    public Result sendXiaoShou();
 
-    public Result sendMessage(ZengXian zengXian);
+    public Result sendXiuZheng();
 }
